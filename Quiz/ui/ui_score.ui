@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>699</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QFrame" name="mainContainer">
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+	background-color: #1e2124;
+	border-radius:10px;
+
+
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>2</number>
+      </property>
+      <property name="leftMargin">
+       <number>2</number>
+      </property>
+      <property name="topMargin">
+       <number>2</number>
+      </property>
+      <property name="rightMargin">
+       <number>2</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QFrame" name="toolContainer">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+	background-color: #393e45;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <property name="topMargin">
+          <number>1</number>
+         </property>
+         <property name="rightMargin">
+          <number>1</number>
+         </property>
+         <property name="bottomMargin">
+          <number>1</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="appName">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+	font: 700 10pt &quot;Unispace&quot;;
+	color: rgb(217, 236, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>QuizApp Score Übersicht</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="scoreContainer">
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+
+background-color:#303338;
+border-radius:0px;
+
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="spacing">
+          <number>2</number>
+         </property>
+         <property name="leftMargin">
+          <number>2</number>
+         </property>
+         <property name="topMargin">
+          <number>2</number>
+         </property>
+         <property name="rightMargin">
+          <number>2</number>
+         </property>
+         <property name="bottomMargin">
+          <number>2</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="scoreFrame">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QFrame" name="frame_5">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>20</y>
+              <width>374</width>
+              <height>304</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QFrame" name="scorePercentFrm">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>270</width>
+               <height>270</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QFrame {
+border-radius:135;
+background-color:  red;
+}</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+            <widget class="QLabel" name="scorePercentLbl">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>250</width>
+               <height>250</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:none;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap resource="../resorces/bg_img.qrc">:/main/progress.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QLabel" name="scoreLbl">
+            <property name="geometry">
+             <rect>
+              <x>120</x>
+              <y>110</y>
+              <width>141</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+background:none;
+	font: 700 9pt &quot;Unispace&quot;;
+	color: rgb(217, 236, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Score
+0%</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="scoreTxtContainer">
+        <property name="maximumSize">
+         <size>
+          <width>378</width>
+          <height>305</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+
+background-color:#303338;
+border-radius:0px;
+		
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+background:none;
+	font: 700 9pt &quot;Unispace&quot;;
+	color: rgb(217, 236, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>Fragen gesamt : </string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="answeredlbl">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+background:none;
+	font: 700 9pt &quot;Unispace&quot;;
+	color: Yellow;
+}</string>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+background:none;
+	font: 700 9pt &quot;Unispace&quot;;
+	color: rgb(217, 236, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>Richtige Antworten Gesamt : </string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLabel" name="sumRightAnswerLbl">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+background:none;
+	font: 700 9pt &quot;Unispace&quot;;
+	color: rgb(85, 255, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+background:none;
+	font: 700 9pt &quot;Unispace&quot;;
+	color: rgb(217, 236, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>Antworten ausgegwählt : </string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLabel" name="noAnsweredLbl">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+background:none;
+	font: 700 9pt &quot;Unispace&quot;;
+	color: rgb(217, 236, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <spacer name="verticalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+background:none;
+	font: 700 9pt &quot;Unispace&quot;;
+	color: rgb(217, 236, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>Richtige Antworten : </string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QLabel" name="rightAnswerLbl">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+background:none;
+	font: 700 9pt &quot;Unispace&quot;;
+	color: lime;
+}</string>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <spacer name="verticalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="10" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+background:none;
+	font: 700 9pt &quot;Unispace&quot;;
+	color: rgb(217, 236, 255);
+}</string>
+           </property>
+           <property name="text">
+            <string>Falsche Antworten : </string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <widget class="QLabel" name="wrongAnswerLbl">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+background:none;
+	font: 700 9pt &quot;Unispace&quot;;
+	color: red;
+}</string>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="0" colspan="2">
+          <widget class="QPushButton" name="restartBtn">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+
+background-color:#303338;
+border-radius:10px;
+border: 2px solid #1e2124;
+color:#d9ecff;
+	font: 700 9pt &quot;Unispace&quot;;
+}
+
+QPushButton:hover {
+background-color: #393e45;
+}
+
+QPushButton:pressed {
+	background-color: #1e2124;
+	border: 2px solid #d9ecff;
+}</string>
+           </property>
+           <property name="text">
+            <string>Beenden</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="statusFm">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+	background-color: #393e45;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resorces/bg_img.qrc"/>
+  <include location="resorces/bg_img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="main">
+    <file>bg0004.png</file>
+    <file>bg0003.png</file>
+    <file>progress.png</file>
+  </qresource>
+</RCC>

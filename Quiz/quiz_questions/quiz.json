@@ -1,0 +1,30 @@
+{
+  "Frage" : [
+    ["Welche klassischen Schutzziele werden bei der Schutzbedarfsfeststellung gemäß IT-Grundschutz empfohlen? (3 Richtige Möglichkeiten)"],
+    ["In welchen Fällen können Sie gemäß IT-Grundschutz-Methodik auf die Schutzbedarfsfeststellung für ein IT-System verzichten? (1 Richtige Möglichkeit)"],
+    ["Welche Kriterien berücksichtigen Sie bei der Bestimmung des Bedarfs an Verfügbarkeit eines IT-Systems? (1 Richtige Möglichkeit)"],
+    ["Was berücksichtigen Sie, wenn Sie den Schutzbedarf einer Anwendung bestimmen? (2 Richtige Möglichkeiten)"],
+    ["Unter welchen Bedingungen kann der Schutzbedarf eines IT-Systems bezüglich Verfügbarkeit geringer sein als derjenige der Anwendungen, für die es eingesetzt wird? (2 Richtige Möglichkeiten)"],
+    ["Wenn bei der Schutzbedarfsfeststellung für ein IT-System Kumulationseffekte berücksichtigt werden, bedeutet dies, dass … (1 Richtige Möglichkeit)"],
+    ["Welche Aufgaben stellen sich Ihnen bei der Modellierung gemäß IT-Grundschutz? (3 Richtige Möglichkeiten)"]
+  ],
+  "Antwort" : [
+    ["Authentizität", "Verfügbarkeit", "Vertraulichkeit", "Integrität"],
+    ["wenn das IT-System spätestens innerhalb von 18 Monaten ausgesondert wird", "wenn das IT-System nicht eingesetzt wird", "wenn die Anwendungen, die es unterstützt, nur einen normalen Schutzbedarf haben", "wenn der Schutzbedarf bereits im Rahmen einer vor einem Jahr durchgeführten Revision festgestellt wurde"],
+    ["die maximal tolerierbare Ausfallzeit des IT-Systems", "den Aufwand, der erforderlich ist, um das IT-System nach einer Beschädigung wiederherzustellen", "die Anzahl der Benutzer des IT-Systems", "die Anschaffungskosten des IT-Systems"],
+    ["die Informationen, die im Zusammenhang mit der Anwendung verwendet werden", "die Bedeutung der Anwendung für die Geschäftsprozesse oder Fachaufgaben", "die relevanten Gefährdungen, denen die Anwendung ausgesetzt ist", "die räumliche Umgebung des IT-Systems, das die Anwendung bereitstellt"],
+    ["wenn der Buchwert des IT-Systems einen zuvor definierten Schwellwert unterschreitet", "wenn das IT-System nur solche Teile der Anwendungen bedient, die einen geringeren Schutzbedarf haben", "wenn mindestens ein weiteres redundantes IT-System in Betrieb ist, das die betreffenden Anwendungen bereitstellen kann", "wenn die Anwendungen innerhalb der nächsten drei Monate so umstrukturiert werden sollen, dass das betreffende IT-System nicht mehr benötigt wird"],
+    ["… sich der Schutzbedarf des IT-Systems erhöht, weil sich Einzelschäden zu einem höheren Gesamtschaden addieren.", "… sich der Schutzbedarf des IT-Systems verringert, weil geeignete, sich gegenseitig verstärkende Sicherheitsmaßnahmen im Einsatz sind.", "… sich der für das IT-System festgestellte Schutzbedarf auch auf den Schutzbedarf anderer IT-Systeme auswirkt, die mit dem betreffenden IT-System vernetzt sind.", "… der Schutzbedarf des IT-Systems erst festgestellt werden kann, wenn der Schutzbedarf der mit diesem vernetzten IT-Systeme festgestellt ist."],
+    ["Sie bilden den in der Strukturanalyse dokumentierten Informationsverbund mithilfe der IT-Grundschutz-Bausteine ab.", "Sie entwerfen die Sicherheitsarchitektur des betrachteten Informationsverbundes.", "Sie merken Zielobjekte, die nicht geeignet modelliert werden können, für eine Risikoanalyse vor.","Sie prüfen, welche IT-Grundschutz-Bausteine für den betrachteten Informationsverbund relevant sind"]
+  ],
+  "Richtig" : [
+    ["F","Verfügbarkeit", "Vertraulichkeit", "Integrität"],
+    ["F", "wenn das IT-System nicht eingesetzt wird","F", "F"],
+    ["die maximal tolerierbare Ausfallzeit des IT-Systems", "F", "F", "F"],
+    ["die Informationen, die im Zusammenhang mit der Anwendung verwendet werden", "die Bedeutung der Anwendung für die Geschäftsprozesse oder Fachaufgaben", "F", "F"],
+    ["F", "wenn das IT-System nur solche Teile der Anwendungen bedient, die einen geringeren Schutzbedarf haben", "wenn mindestens ein weiteres redundantes IT-System in Betrieb ist, das die betreffenden Anwendungen bereitstellen kann", "F"],
+    ["… sich der Schutzbedarf des IT-Systems erhöht, weil sich Einzelschäden zu einem höheren Gesamtschaden addieren.", "F", "F", "F"],
+    ["Sie bilden den in der Strukturanalyse dokumentierten Informationsverbund mithilfe der IT-Grundschutz-Bausteine ab.", "F", "Sie merken Zielobjekte, die nicht geeignet modelliert werden können, für eine Risikoanalyse vor.", "Sie prüfen, welche IT-Grundschutz-Bausteine für den betrachteten Informationsverbund relevant sind"]
+  ]
+
+}
